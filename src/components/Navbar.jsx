@@ -14,8 +14,8 @@ function Navbar() {
   return (
     <>
       <nav className="w-auto bg-white p-6 top-0 rounded-l-full ">
-        <div className="md:flex  justify-between hidden  mx-12 text-xl">
-          <ul className="md:flex gap-6 mx-3 md:text-xl text-gray-900">
+        <div className="lg:flex  justify-between hidden  mx-12 text-xl">
+          <ul className="lg:flex gap-6 mx-3 md:text-xl text-gray-900">
             {navlinks.map((link, index) => (
               <li
                 className="hover:border-b-2 border-cyan-700 hover:text-cyan-700  "
@@ -27,18 +27,18 @@ function Navbar() {
           </ul>
         </div>
         {/* Mobile screen */}
-        <div className="md:hidden justify-end ">
+        <div className="lg:hidden justify-end ">
           <button onClick={toggleNavbar} className="">
             {isopen ? <IoMdCloseCircleOutline className="text-xl" /> : <FaGripLines  className="text-xl" />}
           </button>
         </div>
       </nav>
       {isopen && (
-        <div className="md:hidden w-1/2  justify-center flex flex-col items-start basis-full">
-          <ul className="md:hidden mx-3 md:text-xl ">
+        <div className="lg:hidden w-1/2  justify-center flex flex-col items-start basis-full">
+          <ul className="lg:hidden mx-3 md:text-xl ">
             {navlinks.map((link, index) => (
               <li
-                className="hover:border-b-2 border-cyan-700 hover:text-cyan-700 text-white p-2  "
+                className="hover:border-b-2 border-cyan-700 hover:text-cyan-700 transition-shadow text-white p-2  "
                 key={index}
               >
                 {link}
