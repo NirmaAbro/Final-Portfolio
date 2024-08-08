@@ -23,7 +23,7 @@ function Hero() {
               Hello! <br />
               <span>
                 My Name is{" "}
-                <span className="hover:text-cyan-600">Nirma Abro</span>{" "}
+                <span className="hover:text-white text-cyan-600">Nirma Abro</span>{" "}
               </span>
             </h1>
             <h1 className="text-lg md:text-2xl lg:text-3xl lg:mt-2 leading-5 md:leading-normal font-bold text-gray-600">
@@ -34,7 +34,7 @@ function Hero() {
             <a
               href="/Nirma-Abro-Resume.pdf" // Ensure this matches the name and location of your resume file in the public folder
               download="Nirma_Abro_Resume.pdf" // Optional: Specify the name of the downloaded file
-              className="btn-primary mt-8 hover:bg-cyan-800 rounded-full p-3 hover:text-black md:text-2xl font-bold "
+              className="btn-primary mt-8 hover:bg-cyan-600 border-l-8 border-b-4  border-cyan-600 rounded-full p-2 hover:text-black md:text-2xl font-bold "
             >
               Download Resume
             </a>
