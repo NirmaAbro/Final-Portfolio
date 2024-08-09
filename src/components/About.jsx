@@ -39,7 +39,7 @@ function About() {
   }, []);
 
   return (
-    <div className="bg-gray-800 gap-4 md:flex  ">
+    <div className="bg-gray-800 gap-4 md:flex pb-7 ">
       <div className="text-xl md:w-1/2 text-center items-center justify-center">
         <h6 className="text-white items-center text-justify flex-wrap pt-8 mr-7 md:mr-0 md:mt-20 ml-10">
           I am an undergraduate
@@ -59,10 +59,11 @@ function About() {
       </div>
       <div className="md:w-1/2 flex items-center justify-center pt-24 md:pt-0 ">
         <img
+          // style={{ boxShadow: "0 10px 15px -3px rgba(0, 255, 255, 0.7)" }}
           ref={ref}
           src={aboutimg}
           alt=""
-          className="border-b-8 w-1/2 border-l-8 rounded-full p-0 m-0 border-cyan-800"
+          className="cursor-pointer shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white border-b-8 w-1/2 border-l-8 rounded-full p-0 m-0 border-cyan-800"
         />
       </div>
     </div>

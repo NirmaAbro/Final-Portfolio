@@ -13,12 +13,12 @@ function Navbar() {
 
   return (
     <>
-      <nav className="w-auto bg-white p-6 top-0 rounded-l-full ">
+      <nav className="w-auto p-6 top-0 rounded-l-full ">
         <div className="lg:flex  justify-between hidden  mx-12 text-xl">
-          <ul className="lg:flex gap-6 mx-3 md:text-xl text-gray-900">
+          <ul className="lg:flex gap-6 mx-3 md:text-xl text-cyan-600 ">
             {navlinks.map((link, index) => (
               <li
-                className="hover:border-b-2 border-cyan-700 hover:text-cyan-700  "
+                className="shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white    rounded-3xl transition-shadow text-white p-2  "
                 key={index}
               >
                 {link}
@@ -28,8 +28,12 @@ function Navbar() {
         </div>
         {/* Mobile screen */}
         <div className="lg:hidden justify-end ">
-          <button onClick={toggleNavbar} className="">
-            {isopen ? <IoMdCloseCircleOutline className="text-xl" /> : <FaGripLines  className="text-xl" />}
+          <button onClick={toggleNavbar} className="text-white">
+            {isopen ? (
+              <IoMdCloseCircleOutline className="text-xl" />
+            ) : (
+              <FaGripLines className="text-xl" />
+            )}
           </button>
         </div>
       </nav>
@@ -38,7 +42,7 @@ function Navbar() {
           <ul className="lg:hidden mx-3 md:text-xl ">
             {navlinks.map((link, index) => (
               <li
-                className="hover:border-b-2 border-cyan-700 hover:text-cyan-700 transition-shadow text-white p-2  "
+                className="hover:border-b-2 hover:shadow-white border-cyan-300 hover:text-cyan-300 transition-shadow text-white p-2  "
                 key={index}
               >
                 {link}

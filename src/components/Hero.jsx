@@ -5,16 +5,49 @@ import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap/gsap-core";
+import { useEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function Hero() {
-  useGSAP(()=>{
-    gsap.from(".pic", {
-      duration: 1.5,
-      opacity: 0,
-      y: 100,
-      rotate: 360,
-      ease: "power4.out",
-    });
+  const ref = useRef();
+
+  useEffect(() => {
+    const el = ref.current;
+
+    const animation = gsap.fromTo(
+      el,
+      { scale: 0 },
+      {
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+          end: "top 30%",
+          scrub: true,
+          onEnter: () => animation.play(), // Play animation when element enters the viewport
+          onLeaveBack: () => animation.reverse(), // Reverse animation when scrolling back up
+          toggleActions: "play none none reverse", // Ensures animation plays forward and backward
+          // markers: true, // Remove or comment out this line
+        },
+      }
+    );
+
+    return () => {
+      // Cleanup on unmount
+      if (animation.scrollTrigger) animation.scrollTrigger.kill();
+    };
+  }, []);
+
+  useGSAP(() => {
+    // gsap.from(".pic", {
+    //   duration: 1.5,
+    //   opacity: 0,
+    //   y: 100,
+    //   rotate: 360,
+    //   ease: "power4.out",
+    // });
 
     gsap.from(".name", {
       duration: 1.5,
@@ -40,9 +73,6 @@ function Hero() {
       rotate: -360,
       ease: "power4.out",
     });
-    
-    
-
   });
 
   return (
@@ -52,9 +82,11 @@ function Hero() {
     >
       <div className="flex-1 flex justify-center items-center pic">
         <img
+          // style={{ boxShadow: "0 10px 15px -3px rgba(0, 255, 255, 0.7)" }}
+          ref={ref}
           src={image}
           alt="Hero Pic"
-          className="h-72 w-72 md:h-96 md:w-96 object-cover rounded-full z-10  border-b-8 p-1 border-l-8 border-cyan-700"
+          className="cursor-pointer shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white h-72 w-72 md:h-96 md:w-96 object-cover rounded-full z-10  border-b-8 p-1 border-l-8 border-cyan-700"
         />
       </div>
       <div className="flex-1 ">
@@ -64,7 +96,9 @@ function Hero() {
               Hello! <br />
               <span>
                 My Name is{" "}
-                <span className="hover:text-white text-cyan-600">Nirma Abro</span>{" "}
+                <span className="hover:text-white text-cyan-600">
+                  Nirma Abro
+                </span>{" "}
               </span>
             </h1>
             <h1 className="text-lg md:text-2xl mern lg:text-3xl lg:mt-2 leading-5 md:leading-normal font-bold text-gray-600">
@@ -73,9 +107,10 @@ function Hero() {
           </div>
           <div className="flex justify-center items-center flex-col">
             <a
+              // style={{ boxShadow: "0 10px 15px -3px rgba(0, 255, 255, 0.7)" }}
               href="/Nirma-Abro-Resume.pdf" // Ensure this matches the name and location of your resume file in the public folder
               download="Nirma_Abro_Resume.pdf" // Optional: Specify the name of the downloaded file
-              className="btn-primary button mt-8 hover:bg-cyan-600 border-l-8 border-b-4  border-cyan-600 rounded-full p-2 hover:text-black md:text-2xl font-bold "
+              className=" shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white cursor-pointer btn-primary button mt-8 hover:bg-cyan-600 border-l-8 border-b-4  border-cyan-600 rounded-full p-2 hover:text-black md:text-2xl font-bold "
             >
               Download Resume
             </a>
