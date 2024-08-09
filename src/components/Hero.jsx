@@ -1,5 +1,6 @@
 import React from "react";
-import image from "../images/img2.png";
+// import image from "../images/img2.png";
+import image from "../images/three.svg";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { useGSAP } from "@gsap/react";
@@ -56,10 +57,10 @@ function Hero() {
           className="h-72 w-72 md:h-96 md:w-96 object-cover rounded-full z-10  border-b-8 p-1 border-l-8 border-cyan-700"
         />
       </div>
-      <div className="flex-1 z-20 ">
-        <div className="flex flex-col items-center md:items-start">
+      <div className="flex-1 ">
+        <div className="flex flex-col items-center md:items-start pt-3 md:pt-0 ">
           <div className="text-center md:text-left">
-            <h1 className="text-white font-bold text-2xl md:leading-normal name leading-10 md:text-3xl lg:text-5xl">
+            <h1 className="text-white font-bold  text-2xl md:leading-normal name leading-10 md:text-3xl lg:text-5xl">
               Hello! <br />
               <span>
                 My Name is{" "}
@@ -67,7 +68,7 @@ function Hero() {
               </span>
             </h1>
             <h1 className="text-lg md:text-2xl mern lg:text-3xl lg:mt-2 leading-5 md:leading-normal font-bold text-gray-600">
-              MERN STACK DEVELOPER
+              ReactJS DEVELOPER
             </h1>
           </div>
           <div className="flex justify-center items-center flex-col">
