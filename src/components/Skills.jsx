@@ -135,16 +135,6 @@ function Skills() {
         <DiMongodb className="text-white shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white border-8 border-cyan-700 rounded-full p-1 text-6xl" />
         <h6 className="font-bold text-xl text-white mt-2">MongoDB</h6>
       </div>
-      {/* Java */}
-      <div
-        ref={addToRefs}
-        className="bg-gray-900 shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white mb-3 w-32 h-32 border-2 border-cyan-300 lg:w-40 lg:h-40 flex flex-col justify-center items-center rounded-xl"
-      >
-        <span className="text-white shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white border-8 border-cyan-700 rounded-full p-1 text-4xl">
-          J
-        </span>
-        <h6 className="font-bold text-xl text-white mt-2">Java</h6>
-      </div>
     </div>
   );
 }

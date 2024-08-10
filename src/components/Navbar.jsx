@@ -18,7 +18,7 @@ function Navbar() {
           <ul className="lg:flex gap-6 mx-3 md:text-xl text-cyan-600 ">
             {navlinks.map((link, index) => (
               <li
-                className="shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white    rounded-3xl transition-shadow text-white p-2  "
+                className="shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white rounded-3xl transition-shadow text-white p-2  "
                 key={index}
               >
                 {link}
