@@ -82,7 +82,6 @@ function Hero() {
     >
       <div className="flex-1 flex justify-center items-center pic">
         <img
-          // style={{ boxShadow: "0 10px 15px -3px rgba(0, 255, 255, 0.7)" }}
           ref={ref}
           src={image}
           alt="Hero Pic"
