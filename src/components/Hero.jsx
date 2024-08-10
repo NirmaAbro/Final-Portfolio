@@ -107,7 +107,8 @@ function Hero() {
           <div className="flex justify-center items-center flex-col">
             <a
               // style={{ boxShadow: "0 10px 15px -3px rgba(0, 255, 255, 0.7)" }}
-              href="/Nirma-Abro-Resume.pdf" // Ensure this matches the name and location of your resume file in the public folder
+              // href="/Nirma-Abro-Resume.pdf" // Ensure this matches the name and location of your resume file in the public folder
+              href="/Nirma.pdf"
               download="Nirma_Abro_Resume.pdf" // Optional: Specify the name of the downloaded file
               className=" shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white cursor-pointer btn-primary button mt-8 hover:bg-cyan-600 border-l-8 border-b-4  border-cyan-600 rounded-full p-2 hover:text-black md:text-2xl font-bold "
             >
@@ -115,15 +116,16 @@ function Hero() {
             </a>
             <div className="flex gap-4 mt-4">
               <a
-                href="https://www.facebook.com/profile.php?id=100075848754894"
-                target="_blank"
+                // href="https://www.facebook.c100075848754894"
+                href=""
+                // target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-700 hover:text-white"
               >
                 <FaFacebook className="text-cyan-600 text-2xl md:text-3xl lg:text-4xl " />
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=100075848754894"
+                href="https://github.com/NirmaAbro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-700 hover:text-white"
@@ -139,8 +141,9 @@ function Hero() {
                 <FaLinkedin className="text-cyan-600 text-2xl md:text-3xl lg:text-4xl " />
               </a>
               <a
-                href="https://www.instagram.com/nirma_abro143/"
-                target="_blank"
+                // href="https://www.instagram.43/"
+                href=""
+                // target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-700 hover:text-white "
               >
