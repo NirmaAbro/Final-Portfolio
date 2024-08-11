@@ -117,7 +117,7 @@ function Hero() {
             <div className="flex gap-4 mt-4">
               <a
                 // href="https://www.facebook.c100075848754894"
-                href=""
+                href="https://www.facebook.com"
                 // target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-700 hover:text-white"
@@ -142,7 +142,7 @@ function Hero() {
               </a>
               <a
                 // href="https://www.instagram.43/"
-                href=""
+                href="https://www.instagram.com"
                 // target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-700 hover:text-white "
