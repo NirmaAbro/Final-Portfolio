@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import image1 from "../images/technisttttt.png";
+// import image1 from "../images/technisttttt.png";
 import image2 from "../images/landingpageeee.png";
 import image3 from "../images/recipieeeee.png";
 
@@ -35,7 +35,7 @@ function Projects() {
         className="w-2/3 mt-7 justify-center m-auto items-center md:w-2/3 lg:w-1/2"
       >
         {/* img1 */}
-        <div className="shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white rounded-3xl transition-shadow cursor-pointer border-2 border-cyan-300 m-3 flex flex-col justify-center items-center p-4 w-full md:w-2/3 lg:w-1/2 mx-auto">
+        {/* <div className="shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white rounded-3xl transition-shadow cursor-pointer border-2 border-cyan-300 m-3 flex flex-col justify-center items-center p-4 w-full md:w-2/3 lg:w-1/2 mx-auto">
           <img
             src={image1}
             alt="Slide 1"
@@ -53,7 +53,7 @@ function Projects() {
               Live Demo
             </a>
           </button>
-        </div>
+        </div> */}
 
         {/* img2 */}
         <div className="shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white rounded-3xl transition-shadow cursor-pointer border-2 border-cyan-300 m-3 flex flex-col justify-center items-center p-4 w-full md:w-2/3 lg:w-1/2 mx-auto">
