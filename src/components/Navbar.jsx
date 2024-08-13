@@ -204,7 +204,7 @@
 import React, { useState } from "react";
 import { FaGripLines } from "react-icons/fa";
 import { IoMdCloseCircleOutline } from "react-icons/io";
-import { Link } from "react-scroll"; // Import Link from react-scroll
+import { Link } from "react-scroll"; 
 
 const navlinks = [
   { name: "Home", path: "home" },
