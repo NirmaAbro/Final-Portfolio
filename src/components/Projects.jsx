@@ -68,9 +68,9 @@ function Projects() {
           <button className="text-base mt-4 text-white bg-gray-800 font-bold py-2 px-4 rounded-full shadow-[0_10px_15px_-3px_rgba(0,255,255,0.7)] hover:shadow-white transition-shadow">
             {/* it's a good practice to add rel="noopener noreferrer" when using target="_blank"  */}
             <a
-              // href="https://react-js-beautiful-landing-page-cvvq8apsi-nirma-abros-projects.vercel.app/"
+              href="https://react-js-beautiful-landing-page-cvvq8apsi-nirma-abros-projects.vercel.app/"
               target="_blank"
-              href=""
+              // href=""
               rel="noopener noreferrer"
             >
               Live Demo
